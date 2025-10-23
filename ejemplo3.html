@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo 3 - SWI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Ejemplo 3: Manejo de excepciones con SWI</h1>
+    </header>
+
+    <section>
+        <p>
+            En este ejemplo, se genera una excepción mediante SWI para controlar un error 
+            en la ejecución del programa.
+        </p>
+
+<pre>
+MOV R0, #0
+CMP R0, #0
+BEQ error
+SWI 2           ; Llama a la rutina de error
+</pre>
+
+        <p>El sistema maneja la excepción y muestra un mensaje de error al usuario.</p>
+        <a href="index.html" class="btn">Volver al inicio</a>
+    </section>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo 1 - SWI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Ejemplo 1: Llamada básica con SWI</h1>
+    </header>
+
+    <section>
+        <p>
+            Este ejemplo muestra cómo una instrucción <b>SWI</b> puede invocar una rutina 
+            del sistema para mostrar un mensaje o realizar una operación específica.
+        </p>
+
+<pre>
+MOV R0, #1      ; Número de sistema (print)
+MOV R1, #mensaje
+SWI 0           ; Llama a la interrupción de software
+</pre>
+
+        <p>La instrucción <b>SWI 0</b> ejecuta la rutina predefinida en el vector de interrupciones.</p>
+        <a href="index.html" class="btn">Volver al inicio</a>
+    </section>
+</body>
+</html>
